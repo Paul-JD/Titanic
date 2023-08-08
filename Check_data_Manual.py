@@ -2,6 +2,7 @@
 
 import pandas as pd
 from pandas import DataFrame
+from Utilities import check_nan
 
 # Data set imports
 
@@ -34,7 +35,8 @@ Test = Test.dropna()
 check_null_values_Train = Train.isnull().sum()
 check_null_values_Test = Test.isnull().sum()
 
-print(check_null_values_Train)
-print(Train.shape)
-print(check_null_values_Test)
-print(Test.shape)
+# Save as Csv files
+Train.to_csv('Csv_clean_files/Train_clean.csv', index=False)
+Test.to_csv('Csv_clean_files/Test_clean.csv', index=False)
+Train_result.to_csv('Csv_clean_files/Train_result.csv', index=False)
+Test_result.to_csv('Csv_clean_files/Test_result.csv', index=False)

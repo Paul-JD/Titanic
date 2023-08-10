@@ -11,7 +11,7 @@ class TestDataSet(TestCase):
     dataframe_test_3: DataFrame = pd.DataFrame(np.array([[5, 4, 3], [5, 8, 78]]))
 
     def test_import_file(self):
-        self.assertEqual(type(check_import_file('Csv_clean_files/Train_clean.csv')), DataFrame)
+        self.assertEqual(type(check_import_file('../Csv_clean_files/Train_clean.csv')), DataFrame)
         self.assertEqual(check_import_file('test/test.csv'), FileNotFoundError)
 
     # Control test and train have the same numbers of columns

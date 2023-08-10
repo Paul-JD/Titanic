@@ -24,7 +24,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\Csv_files\Test_clean.csv">
+        <entry key="\Csv_files\train.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

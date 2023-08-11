@@ -25,4 +25,3 @@ Dev_pred_val = rfc.predict(test_X)
 # Evaluate the model using accuracy score
 accuracy = accuracy_score(test_Y, Dev_pred_val)
 print(f'Accuracy: {accuracy:.2f}')
-

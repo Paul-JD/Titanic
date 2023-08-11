@@ -1,5 +1,5 @@
 from unittest import TestCase
-from Check_data import check_import_file, check_nan, check_column_numbers, check_dataset_length
+from Function_Bank.Check_data import check_import_file, check_nan, check_column_numbers, check_dataset_length
 from pandas import DataFrame
 import pandas as pd
 import numpy as np
